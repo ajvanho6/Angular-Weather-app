@@ -1,0 +1,78 @@
+
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    background: #68AEED url(../images/cloud.png) no-repeat;
+}
+h4{
+    text-transform: uppercase;
+    font-size:26px;
+    margin-bottom:20px;
+    
+}
+
+h3{
+    margin-bottom:20px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    border-radius: 0px;
+    letter-spacing:1px;
+    padding: 6px 10px;
+    float:right;
+    
+}
+
+
+.form-control {
+    color: rgb(255,255,255);
+    background-color: #68AEED;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255, 0.5);
+    border-radius:0px;
+    box-shadow:none;
+}
+.form-control:focus {
+    border-color: rgb(255,196,0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+ }
+
+ .panel {
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+ .panel-body {
+  background:#68AEED;
+}
+
+.panel-heading {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    
+}
+
+.panel-default>.panel-heading {
+    border-color: rgba(255,196,0, 0.7);
+}
+
+.bg-primary {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.bg-primary:focus, a.bg-primary:hover {
+    background-color: transparent;
+}
+a:hover{
+    text-decoration:none;
+    color:#fff;
+}
+

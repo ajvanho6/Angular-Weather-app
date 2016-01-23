@@ -1,0 +1,37 @@
+<p><a href="#/">Back to search</a></p>
+
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-2">
+		<h3>Forecast for {{city}}</h3>
+		<p>
+		 <a href="#forecast/3" ng-class="{'bg-primary': days === '3'}">3 day</a> |
+		 <a href="#forecast/5" ng-class="{'bg-primary': days === '5'}" >5 day</a> |
+		 <a href="#forecast/7" ng-class="{'bg-primary': days === '7'}">7 day</a>
+		</p>
+	</div>
+</div>
+
+
+<div ng-repeat="w in weatherResults.list">
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-2">
+		
+
+		<weather-report weather-day="w" convert-temperature="convertTemp(temper)" convert-dateu="convertDate(date)" format-date="MMM,d,y"></weather-report>
+			
+		</div>
+
+		<div class="col-xs-4 ">
+			<p>Clouds: {{w.clouds}}</p>
+			<p>Humidity: {{w.humidity}}%</p>
+			<p>Weather: {{w.weather[0].description}}</p>
+			<img ng-src="{{url}}{{w.weather[0].icon}}.png" alt="">		
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+

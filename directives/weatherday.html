@@ -1,0 +1,11 @@
+	<div class="panel panel-default">
+		<div class="panel-heading">
+		    <h3 class="panel-title">{{convertDateu({date:weatherDay.dt}) | date:formatDate}}</h3>
+		</div>
+		<div class="panel-body">
+		    <p>Daytime temperature: {{convertTemperature({temper:weatherDay.temp.day})}}</p>
+		    <p>Min temperature: {{convertTemperature({temper:weatherDay.temp.min})}}</p>
+			<p>Max temperature: {{convertTemperature({temper:weatherDay.temp.max})}}</p>
+			
+		</div>
+	</div>
