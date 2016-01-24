@@ -14,7 +14,7 @@ myApp.controller('mainControler', ['$scope','$resource','$location','wService', 
 }]);
 
 
-myApp.controller('forecastControler', ['$scope','$resource','$routeParams','wService', function($scope,$resource,$routeParams,wService){
+myApp.controller('forecastControler', ['$scope','$resource','$routeParams','$log','wService', function($scope,$resource,$routeParams,$log,wService){
 	
 	$scope.days = $routeParams.days || '3';
 
@@ -27,10 +27,7 @@ myApp.controller('forecastControler', ['$scope','$resource','$routeParams','wSer
 
 	$scope.weatherResults=$scope.weatherAPI.get({q:$scope.city, cnt:$scope.days});
 		
-		console.log($scope.weatherResults);
-
-	// API key cf161d08a9b26caf3e7555aa70fa1ec5
-	
+	$log.log($scope.weatherResults);
 	
 	$scope.convertDate=function(dateResult){
 		return new Date(dateResult * 1000);
