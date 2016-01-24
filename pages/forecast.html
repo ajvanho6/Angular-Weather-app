@@ -14,14 +14,14 @@
 
 <div ng-repeat="w in weatherResults.list">
 	<div class="row">
-		<div class="col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-2">
+		<div class="col-sm-4 col-sm-offset-2">
 		
 
 		<weather-report weather-day="w" convert-temperature="convertTemp(temper)" convert-dateu="convertDate(date)" format-date="MMM,d,y"></weather-report>
 			
 		</div>
 
-		<div class="col-xs-4 ">
+		<div class="col-sm-4">
 			<p>Clouds: {{w.clouds}}</p>
 			<p>Humidity: {{w.humidity}}%</p>
 			<p>Weather: {{w.weather[0].description}}</p>
